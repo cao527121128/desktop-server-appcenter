@@ -8,14 +8,14 @@
       "key": "name",
       "type": "string",
       "label": "Name",
-      "description": "The name of the Desktop cloud service",
-      "default": "Desktop cloud",
+      "description": "The name of the VDI service",
+      "default": "VDI",
       "required": "no"
     }, {
       "key": "description",
       "type": "string",
       "label": "Description",
-      "description": "The description of the Desktop cloud service",
+      "description": "The description of the VDI service",
       "default": "",
       "required": "no"
     }, {

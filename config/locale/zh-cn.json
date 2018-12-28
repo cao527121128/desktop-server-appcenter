@@ -1,8 +1,8 @@
 {
   "Name": "名称",
   "Description": "描述",
-  "The name of the ZooKeeper service": "ZooKeeper 服务名称",
-  "The description of the ZooKeeper service": "ZooKeeper 服务描述",
+  "The name of the VDI service": "VDI 服务名称",
+  "The description of the VDI service": "VDI 服务描述",
   "VxNet": "私有网络",
   "Choose a vxnet to join": "选择要加入的私有网络",
   "CPUs of each node": "每个节点的 CPU 数量",
