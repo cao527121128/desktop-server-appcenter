@@ -45,5 +45,8 @@
 
   "When enabled, VDI auto purge feature retains the autopurge.snapRetainCount most recent snapshots and the corresponding transaction logs in the dataDir and dataLogDir respectively and deletes the rest": "当自动清除功能 (Auto Purge) 开启时，所要保留的最新快照和事务日志文件数，其余文件将被清除",
 
-  "The time interval in hours for which the purge task has to be triggered; set to a positive integer (1 and above) to enable the auto purging": "自动清除功能的执行间隔，以小时为单位，0 表示不开启"
+  "The time interval in hours for which the purge task has to be triggered; set to a positive integer (1 and above) to enable the auto purging": "自动清除功能的执行间隔，以小时为单位，0 表示不开启",
+  "VDI Server Name":"VDI服务域名",
+  "The Server Name of VDI Service , can contain lowercase letters and digits, and must start with lowercase letters":"VDI 服务域名,可以由小写字母和数字组成，必须以字母开头"
+
 }

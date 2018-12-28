@@ -161,6 +161,16 @@
       "min": 0,
       "max": 720,
       "required": "no"
-    }]
+    }, {
+      "key": "vdi_server_name",
+      "label": "VDI Server Name",
+      "description": "The Server Name of VDI Service , can contain lowercase letters and digits, and must start with lowercase letters",
+      "type": "string",
+      "changeable": true,
+      "default": "wuhan.qingcloud.com",
+      "pattern": "[a-z][a-z0-9]",
+      "required": "yes"
+    }
+    ]
   }]
 }
