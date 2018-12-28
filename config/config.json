@@ -26,7 +26,7 @@
       "default": "",
       "required": "yes"
     }, {
-      "key": "zk_node",
+      "key": "vdi_node",
       "label": "Participant Node",
       "description": "Properties for participant nodes",
       "type": "array",

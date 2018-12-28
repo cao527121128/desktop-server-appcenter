@@ -9,7 +9,7 @@
   "Memory": "内存",
   "Memory of each node (in MiB)": "每个节点的内存数量（单位：MiB）",
   "Instance Class": "主机类型",
-  "Participant Node": "ZooKeeper 节点",
+  "Participant Node": "VDI 节点",
   "Node Count": "节点数量",
   "Number of nodes": "要创建的节点数量",
   "Volume Size": "存储容量",

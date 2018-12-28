@@ -1,5 +1,5 @@
 {
-  "Participant Node": "ZooKeeper Node",
+  "Participant Node": "VDI Node",
   "mode": "Mode (L:Leader,F:Follower,S:Standalone)",
   "min": "Minimum Latency",
   "avg": "Average Latency",
