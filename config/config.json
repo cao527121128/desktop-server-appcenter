@@ -78,7 +78,7 @@
     "properties": [{
       "key": "admin_enabled",
       "label": "Admin Enabled?",
-      "description": "Enable admin user to administrate Desktop cloud cluster, ZNodes, and ACLs",
+      "description": "Enable admin user to administrate VDI cluster",
       "type": "boolean",
       "changeable": true,
       "default": false,
@@ -89,7 +89,7 @@
       "description": "The username of the admin user (ignore if disabled), can contain lowercase letters and digits, and must start with lowercase letters, with 3-12 characters in total",
       "type": "string",
       "changeable": true,
-      "default": "super",
+      "default": "admin",
       "pattern": "[a-z][a-z0-9]{3,12}",
       "required": "yes"
     }, {
@@ -98,13 +98,13 @@
       "description": "The password of the admin user (ignore if disabled), can contain uppercase & lowercase letters, digits, and the following 10 special characters !@#$%^&*() with 4-32 characters in total",
       "type": "password",
       "changeable": true,
-      "default": "Super12345",
+      "default": "zhu88jie",
       "pattern": "[A-Za-z0-9!@#$%^&*()]{4,32}",
       "required": "yes"
     }, {
       "key": "tickTime",
       "label": "tickTime",
-      "description": "The length of a single tick, which is the basic time unit used by Desktop cloud, as measured in milliseconds; it is used to regulate heartbeats, and timeouts; for example, the minimum session timeout will be two ticks",
+      "description": "The length of a single tick, which is the basic time unit used by VDI, as measured in milliseconds; it is used to regulate heartbeats, and timeouts; for example, the minimum session timeout will be two ticks",
       "type": "integer",
       "changeable": true,
       "default": 2000,
@@ -114,7 +114,7 @@
     }, {
       "key": "initLimit",
       "label": "initLimit",
-      "description": "Amount of time, in ticks (see tickTime), to allow followers to connect and sync to a leader; increase this value as needed, if the amount of data managed by Desktop cloud is large",
+      "description": "Amount of time, in ticks (see tickTime), to allow followers to connect and sync to a leader; increase this value as needed, if the amount of data managed by VDI is large",
       "type": "integer",
       "changeable": true,
       "default": 10,
@@ -124,7 +124,7 @@
     }, {
       "key": "syncLimit",
       "label": "syncLimit",
-      "description": "Amount of time, in ticks (see tickTime), to allow followers to sync with Desktop cloud; if followers fall too far behind a leader, they will be dropped",
+      "description": "Amount of time, in ticks (see tickTime), to allow followers to sync with VDI; if followers fall too far behind a leader, they will be dropped",
       "type": "integer",
       "changeable": true,
       "default": 5,
@@ -134,7 +134,7 @@
     }, {
       "key": "maxClientCnxns",
       "label": "maxClientCnxns",
-      "description": "Limits the number of concurrent connections (at the socket level) that a single client, identified by IP address, may make to a single member of the Desktop cloud ensemble; this is used to prevent certain classes of DoS attacks, including file descriptor exhaustion; setting this to 0 entirely removes the limit on concurrent connections",
+      "description": "Limits the number of concurrent connections (at the socket level) that a single client, identified by IP address, may make to a single member of the VDI ensemble; this is used to prevent certain classes of DoS attacks, including file descriptor exhaustion; setting this to 0 entirely removes the limit on concurrent connections",
       "type": "integer",
       "changeable": true,
       "default": 1000,
@@ -144,7 +144,7 @@
     }, {
       "key": "autopurge_snapRetainCount",
       "label": "autopurge.snapRetainCount",
-      "description": "When enabled, Desktop cloud auto purge feature retains the autopurge.snapRetainCount most recent snapshots and the corresponding transaction logs in the dataDir and dataLogDir respectively and deletes the rest",
+      "description": "When enabled, VDI auto purge feature retains the autopurge.snapRetainCount most recent snapshots and the corresponding transaction logs in the dataDir and dataLogDir respectively and deletes the rest",
       "type": "integer",
       "changeable": true,
       "default": 3,
