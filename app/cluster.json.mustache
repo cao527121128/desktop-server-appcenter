@@ -6,14 +6,17 @@
     "container": {
       "type": "kvm",
       "zone": "desktop1",
-      "image": "img-n0833n6l"
+      "image": "img-yh8d1a2w"
     },
     "count": {{cluster.vdi_node.count}},
     "cpu": {{cluster.vdi_node.cpu}},
     "memory": {{cluster.vdi_node.memory}},
     "instance_class": {{cluster.vdi_node.instance_class}},
     "volume": {
-      "size": {{cluster.vdi_node.volume_size}}
+      "size": {{cluster.vdi_node.volume_size}},
+      "mount_point": "/data",
+      "mount_options": "defaults,noatime",
+      "filesystem": "ext4"
     },
     "server_id_upper_bound": 255,
     "services": {
