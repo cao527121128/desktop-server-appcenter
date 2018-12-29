@@ -6,7 +6,7 @@
     "container": {
       "type": "kvm",
       "zone": "desktop1",
-      "image": "img-yh8d1a2w"
+      "image": "img-5wc6bk5j"
     },
     "count": {{cluster.vdi_node.count}},
     "cpu": {{cluster.vdi_node.cpu}},
@@ -28,6 +28,9 @@
       },
       "stop": {
         "cmd": "bash -e /opt/zkapp/bin/app.sh stop"
+      },
+      "restart": {
+        "cmd": "bash -e /opt/zkapp/bin/app.sh restart"
       },
       "upgrade": {
         "cmd": "bash -e /opt/zkapp/bin/init.sh"
