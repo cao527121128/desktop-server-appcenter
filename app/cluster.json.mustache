@@ -18,7 +18,6 @@
       "mount_options": "defaults,noatime",
       "filesystem": "ext4"
     },
-    "server_id_upper_bound": 255,
     "services": {
       "init": {
         "cmd": "bash -e /opt/zkapp/bin/init.sh"
@@ -38,16 +37,6 @@
     },
     "vertical_scaling_policy": "sequential"
   }],
-  "endpoints": {
-    "client": {
-      "port": 2181,
-      "protocol": "tcp"
-    },
-    "rest": {
-      "port": 9998,
-      "protocol": "tcp"
-    }
-  },
   "health_check": {
     "enable": true,
     "interval_sec": 60,
