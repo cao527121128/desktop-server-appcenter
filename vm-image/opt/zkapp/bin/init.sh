@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# Copyright (C) 2018 Yunify Inc.
+#
+#
+LOG_DIR=/data/pitrix/log
+mkdir -p $LOG_DIR
 
-LOGS_DIR=/data/zookeeper/logs
-mkdir -p $LOGS_DIR
-chown -R ubuntu.ubuntu $LOGS_DIR
