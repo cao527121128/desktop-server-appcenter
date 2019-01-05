@@ -1,0 +1,7 @@
+[template]
+src = "vdi-portal.tmpl"
+dest = "/etc/nginx/sites-enabled/vdi-portal"
+keys = [
+  "/",
+]
+reload_cmd = "bash -e /opt/zkapp/bin/app.sh restart"

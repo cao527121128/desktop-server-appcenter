@@ -1,0 +1,8 @@
+server {
+    listen  80;
+    server_name {{getv "/env/zkVdiServerName"}};
+    location / {
+        proxy_pass http://localhost:8897;
+        proxy_set_header Host $host;
+    }
+}

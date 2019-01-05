@@ -9,3 +9,11 @@ autopurge.purgeInterval={{getv "/env/autopurge.purgeInterval" "0"}}
 {{range $nodeId := lsdir "/hosts"}}{{$gsidUrl := printf "/hosts/%s/gsid" $nodeId}}{{$gsid := getv $gsidUrl}}{{$ipUrl := printf "/hosts/%s/ip" $nodeId}}{{$ip := getv $ipUrl}}{{$myNodeId := getv "/host/instance_id"}}
 server.{{$gsid}}={{if eq $nodeId $myNodeId}}0.0.0.0{{else}}{{$ip}}{{end}}:2888:3888{{end}}
 zkVdiServerName="{{getv "/env/zkVdiServerName"}}"
+server {
+    listen  80;
+    server_name {{getv "/env/zkVdiServerName"}};
+    location / {
+        proxy_pass http://localhost:8897;
+        proxy_set_header Host $host;
+    }
+}
